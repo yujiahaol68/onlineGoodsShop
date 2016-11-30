@@ -1,0 +1,136 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+//@include foundation-grid;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+/*************************************/
+/************* MY STYLES ************/
+/*************************************/
+@import './partials/variables';
+@import './partials/base';
+@import './partials/nav';
+
+/**** HERO SECTION ****/
+
+.hero{
+	padding-top: 20px;
+}
+
+.pics{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#f-cate{
+	background-color: #999;
+}
+
+#category a#f-cate{
+	color: white;
+}
+
+.is-submenu-item a{
+	color: white;
+	background: #999;
+}
+
+.dropdown.menu.vertical > li.opens-right > a::after{
+	border-color: transparent transparent transparent white;
+}
+
+img{
+	height: 250px;
+	width: 392px;
+}
+
+.main{
+	padding: 130px 0px;
+}
+
+/******* FOOTER SECTION ********/
+footer{
+	background-color: #e83a37;
+}
+
+footer a {
+	display: block;
+	color: white;
+}
+
+footer a:hover {
+	color: rgba(255,255,255,0.8);
+}
+
+footer hr {
+	border-color: rgba(255,255,255,0.3);
+	margin: 10px 0px;
+}
+
+footer h5 {
+	color: white;
+	font-size: 1.15em;
+}
+
+footer span {
+	font-size: 10px;
+}
+
+/* *************
+MEDIA QUERY
+**************** */
+
+@media (max-width: 820px) {
+
+	.nav-desktop {
+		display: none;
+	}
+    .hero {
+        padding: 0px;
+    }
+}
