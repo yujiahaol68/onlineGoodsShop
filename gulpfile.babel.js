@@ -51,6 +51,9 @@ function pages() {
     .pipe(panini({
       root: 'src/pages/',
       layouts: 'src/layouts/',
+      pageLayouts: {
+          'home' : 'default'
+      },
       partials: 'src/partials/',
       data: 'src/data/',
       helpers: 'src/helpers/'

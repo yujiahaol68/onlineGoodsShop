@@ -3,7 +3,7 @@
 .title-bar {
 	height: 60px;
 	padding-top: 17px;
-	background: #e83a37;
+	background: $primary-color;
 }
 
 .off-canvas-wrapper {
@@ -26,7 +26,7 @@
 
 /**** DESKTOP NAVIGATION ****/
 .nav-desktop{
-	background-color: #e83a37;
+	background-color: $primary-color;
 	font-size: 18px;
 	padding-top: 0px;
 	padding-bottom: 0px;
@@ -49,7 +49,7 @@
 
 .top-bar {
     ul {
-        background-color: #e83a37;
+        background-color: $primary-color;
     	line-height: 60px;
     	padding: 0px;
     }
@@ -66,7 +66,7 @@
 }
 
 nav a.button.alert{
-	background-color: #e83a37;
+	background-color: $primary-color;
 	font-size: 1.1rem;
 	line-height: 60px;
 	padding-top: 0px;

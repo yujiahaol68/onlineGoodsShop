@@ -1,0 +1,26 @@
+footer {
+	background-color: $primary-color;
+}
+
+footer a {
+	display: block;
+	color: white;
+}
+
+footer a:hover {
+	color: rgba(255,255,255,0.8);
+}
+
+footer hr {
+	border-color: rgba(255,255,255,0.3);
+	margin: 10px 0px;
+}
+
+footer h5 {
+	color: white;
+	font-size: 1.15em;
+}
+
+footer span {
+	font-size: 10px;
+}

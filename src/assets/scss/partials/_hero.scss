@@ -1,0 +1,30 @@
+.hero{
+	padding-top: 20px;
+}
+
+.pics{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#f-cate{
+	background-color: #999;
+}
+
+#category a#f-cate{
+	color: white;
+}
+
+.is-submenu-item a{
+	color: white;
+	background: #999;
+}
+
+.dropdown.menu.vertical > li.opens-right > a::after{
+	border-color: transparent transparent transparent white;
+}
+
+img{
+	height: 250px;
+	width: 392px;
+}
