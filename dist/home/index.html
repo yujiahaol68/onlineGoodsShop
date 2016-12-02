@@ -10,162 +10,173 @@
     <link rel="stylesheet" href="../assets/etn_css/animate.min.css">
   </head>
   <body>
-      <div class="off-canvas-wrapper">
-            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-                <div class="off-canvas position-left mobile-menu" id="mobile-menu" data-off-canvas>
-                  <!-- Menu -->
-                <ul class="vertical menu">
-                  <li><a href="#"><strong>My Goods</strong></a></li>
-                  <li><a href="#">search</a></li>
-                  <li><a href="#">message box</a></li>
-                </ul>
+        <!-- DESKTOP NAVIGATION  -->
+        <nav class="top-bar nav-desktop">
+            <div class="wrap">
+                <div class="top-bar-left">
+                    <ul class="menu">
+                        <li class="menu-text" id="siteTitle">MyGoodsMarket</li>
+                        <li><a href="#" class="button">Home</a></li>
+                        <li><a href="#" class="button">Sell</a></li>
+                        <li><a href="#" class="button">Help</a></li>
+                    </ul>
                 </div>
-                <!-- MOBILE NAVIGATION -->
-                <div class="off-canvas-content" data-off-canvas-content>
-                  <div class="title-bar show-for-small-only">
-                    <div class="title-bar-left">
-                      <button class="menu-icon" type="button" data-open="mobile-menu"></button>
-                      <span class="title-bar-title">MyGoodsMarket</span>
-                    </div>
-                  </div>
-                  <!-- DESKTOP NAVIGATION  -->
-                  <nav class="top-bar nav-desktop">
-                    <div class="wrap">
-                      <div class="top-bar-left">
-                        <ul class="menu">
-                          <li class="menu-text">MyGoodsMarket</li>
-                          <li><a href="#" class="button alert">Home</a></li>
-                          <li><a href="#" class="button alert">forum</a></li>
-                          <li><a href="#" class="button alert">Help</a></li>
-                        </ul>
-                      </div>
-                      <div class="top-bar-right">
-                        <ul class="menu">
-                          <li class="menu-text"><a href="#" class="button alert">Sign in/out</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-                  
+                <div class="top-bar-right">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li>
+                            <a href="#">Your account</a>
+                            <ul class="menu">
+                                <li><a href="#" style="font-size: smaller">Your account</a></li>
+                                <li><a href="#" style="font-size: smaller">Shopping list</a></li>
+                                <li><a href="#" style="font-size: small">Subscribe &amp; saved items</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="button">Sign in/up</a></li>
+                        <li><a href="#" class="button">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
 
-                          <!-- HERO SECTION -->
-                          <section class="hero">
-                            <div class="row">
-                              <div class="medium-2 columns show-for-medium" id="category">
-                                <ul class="vertical dropdown menu" data-dropdown-menu style="max-width: 300px;">
-                                  <li><a href="#" id="f-cate">3C product</a>
-                                  <ul class="menu">
-                                    <li><a href="#">hardware</a></li>
-                                    <li><a href="#">software</a></li>
-                                    <li><a href="#">recreation device</a></li>
-                                    <li><a href="#">mobile device</a></li>
-                                  </ul>
-                                </li>
-                                <li><a href="#" id="f-cate">daily</a>
-                                <ul class="menu">
-                                  <li><a href="#">undefine</a></li>
-                                </ul>
-                              </li>
-                              <li><a href="#" id="f-cate">old books</a>
-                              <ul class="menu">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="row">
+                <!--- Logo picture --->
+                <div class="medium-2 large-2 columns"><img id="logo" src="../assets/img/logo.png"></div>
+                <!--- search bar sticky --->
+                <div class="medium-6 large-6 columns" data-sticky-container>
+                    <div class="sticky" data-sticky data-top-anchor="logo:top" data-margin-top="0">
+                    <form class="searchGoodsName" action="#" method="post">
+                        <div class="input-group">
+                            <input class="input-group-field" type="text">
+                            <div class="input-group-button">
+                                <input type="submit" class="button" value="Search">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--- Goods Category --->
+                <div class="medium-2 columns show-for-medium" id="category">
+                    <ul class="vertical dropdown menu" data-dropdown-menu style="max-width: 300px;">
+                        <li><a href="#" id="f-cate">electronics</a>
+                            <ul class="menu">
+                                <li><a href="#">hardware</a></li>
+                                <li><a href="#">software</a></li>
+                                <li><a href="#">computer</a></li>
+                                <li><a href="#">recreation device</a></li>
+                                <li><a href="#">mobile device</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="f-cate">clothing,shoes</a>
+                            <ul class="menu">
+                                <li><a href="#">man</a></li>
+                                <li><a href="#">woman</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="f-cate">books</a>
+                            <ul class="menu">
                                 <li><a href="#">novel</a></li>
                                 <li><a href="#">biography</a></li>
                                 <li><a href="#">others</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="#" id="f-cate">old vehicle</a>
-                            <ul class="menu">
-                              <li><a href="#">eletronic</a></li>
-                              <li><a href="#">bicycle</a></li>
                             </ul>
-                          </li>
-                          <li><a href="#" id="f-cate">Your friends</a></li>
-                      </ul>
-                    </div>
-                    <div class="medium-6 large-7 columns align-bottom pics">
-                      <div class="orbit" role="region" aria-label="Favorite Space" data-orbit>
+                        </li>
+                        <li><a href="#" id="f-cate">vehicle</a>
+                            <ul class="menu">
+                                <li><a href="#">eletronic</a></li>
+                                <li><a href="#">bicycle</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="f-cate">Sport</a></li>
+                        <li><a href="#" id="f-cate">Grocery &amp; wine</a></li>
+                    </ul>
+                </div>
+                <!--- pics orbit-image-shower --->
+                <div class="medium-6 large-7 columns align-bottom pics">
+                    <div class="orbit" role="region" aria-label="Favorite Space" data-orbit>
                         <ul class="orbit-container">
-                          <li class="is-active orbit-slide">
-                            <img class="orbit-image" src="../assets/img/01.png">
-                            <figcaption class="orbit-caption">ipad air2</figcaption>
-                          </li>
-                          <li class="orbit-slide">
-                            <img class="orbit-image" src="../assets/img/02.jpg">
-                            <figcaption class="orbit-caption">iphone7</figcaption>
-                          </li>
-                          <li class="orbit-slide">
-                            <img class="orbit-image" src="../assets/img/03.jpg">
-                            <figcaption class="orbit-caption">surface studio</figcaption>
-                          </li>
-                          <li class="orbit-slide">
-                            <img class="orbit-image" src="../assets/img/01.png">
-                            <figcaption class="orbit-caption">ipad air2</figcaption>
-                          </li>
+                            <li class="is-active orbit-slide">
+                                <img class="orbit-image" src="../assets/img/01.png">
+                                <figcaption class="orbit-caption">ipad air2</figcaption>
+                            </li>
+                            <li class="orbit-slide">
+                                <img class="orbit-image" src="../assets/img/02.jpg">
+                                <figcaption class="orbit-caption">iphone7</figcaption>
+                            </li>
+                            <li class="orbit-slide">
+                                <img class="orbit-image" src="../assets/img/03.jpg">
+                                <figcaption class="orbit-caption">surface studio</figcaption>
+                            </li>
+                            <li class="orbit-slide">
+                                <img class="orbit-image" src="../assets/img/01.png">
+                                <figcaption class="orbit-caption">ipad air2</figcaption>
+                            </li>
                         </ul>
                         <nav class="orbit-bullets">
-                          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details</span><span class="show-for-sr">Current Slide</span></button>
-                          <button data-slide="1"><span class="show-for-sr">Second slide details</span></button>
-                          <button data-slide="2"><span class="show-for-sr">Third slide details</span></button>
-                          <button data-slide="3"><span class="show-for-sr">Fourth slide details</span></button>
+                            <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details</span><span class="show-for-sr">Current Slide</span></button>
+                            <button data-slide="1"><span class="show-for-sr">Second slide details</span></button>
+                            <button data-slide="2"><span class="show-for-sr">Third slide details</span></button>
+                            <button data-slide="3"><span class="show-for-sr">Fourth slide details</span></button>
                         </nav>
-                      </div>
                     </div>
-                    <div class="medium-4 large-3 columns show-for-medium">
-                      <a href="#" class="button alert">Publish Goods</a>
-                      <a href="#" class="button alert">Wanted!</a>
-                      <ul class="tabs" data-tabs id="example-tabs">
+                </div>
+                <!--- List panel: Hot and announcement --->
+                <div class="medium-4 large-3 columns show-for-medium">
+                    <ul class="tabs" data-tabs id="example-tabs">
                         <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">hot list</a></li>
                         <li class="tabs-title"><a href="#panel2">announcement</a></li>
-                      </ul>
-                      <div class="tabs-content" data-tabs-content="example-tabs">
+                    </ul>
+                    <div class="tabs-content" data-tabs-content="example-tabs">
                         <div class="tabs-panel is-active" id="panel1">
-                          <li><a href="#">Goods1</a></li>
-                          <li><a href="#">Goods2</a></li>
-                          <li><a href="#">Goods3</a></li>
-                          <li><a href="#">Goods4</a></li>
+                            <li><a href="#">Goods1</a></li>
+                            <li><a href="#">Goods2</a></li>
+                            <li><a href="#">Goods3</a></li>
+                            <li><a href="#">Goods4</a></li>
                         </div>
                         <div class="tabs-panel" id="panel2">
-                          <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit</p>
+                            <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit</p>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                </section>
-                <!-- MAIN CONTENT -->
-                <div class="main">
-                </div>
-                
-
-                <!-- FOOTER SECTION -->
-                <footer>
-                  <div class="wrap row small-up-1 medium-up-3">
-                    <div class="columns">
-                      <h5><strong>Contact us</strong></h5>
-                      <hr>
-                      <a href="#"><span>phone</span></a>
-                      <a href="#"><span>Email</span></a>
-                      <a href="#"><span>Address</span></a>
-                    </div>
-                    <div class="columns">
-                      <h5><strong>About us</strong></h5>
-                      <hr>
-                      <a href="#"><span>About Us</span></a>
-                      <a href="#"><span>Services</span></a>
-                    </div>
-                    <div class="columns">
-                      <h5><strong>Social network</strong></h5>
-                      <hr>
-                      <a href="#"><span>sina</span></a>
-                      <a href="#"><span>Wechat</span></a>
-                      <a href="#"><span>QQ</span></a>
-                    </div>
-                  </div>
-                </footer>
-                
-
                 </div>
             </div>
-    </div>
+        </section>
+        <!-- MAIN CONTENT -->
+        <div class="main">
+        </div>
+        
+
+        <!-- FOOTER SECTION -->
+        <footer>
+          <div class="wrap row small-up-1 medium-up-3">
+            <div class="columns">
+              <h5><strong>Contact us</strong></h5>
+              <hr>
+              <a href="#"><span>phone</span></a>
+              <a href="#"><span>Email</span></a>
+              <a href="#"><span>Address</span></a>
+            </div>
+            <div class="columns">
+              <h5><strong>About us</strong></h5>
+              <hr>
+              <a href="#"><span>About Us</span></a>
+              <a href="#"><span>Services</span></a>
+            </div>
+            <div class="columns">
+              <h5><strong>Social network</strong></h5>
+              <hr>
+              <a href="#"><span>sina</span></a>
+              <a href="#"><span>Wechat</span></a>
+              <a href="#"><span>QQ</span></a>
+            </div>
+          </div>
+        </footer>
+        
+
+
+
     <script src="../assets/js/app.js"></script>
   </body>
 </html>

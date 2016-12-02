@@ -1,7 +1,17 @@
 $category-color : #6c6669;
+$orbit-image-height : 250px;
 
 .hero{
 	padding-top: 20px;
+
+	.is-submenu-item a{
+		color: white;
+		background: $category-color;
+	}
+
+	.dropdown.menu.vertical > li.opens-right > a::after{
+		border-color: transparent transparent transparent white;
+	}
 }
 
 .pics{
@@ -17,16 +27,8 @@ $category-color : #6c6669;
 	color: white;
 }
 
-.is-submenu-item a{
-	color: white;
-	background: $category-color;
-}
 
-.dropdown.menu.vertical > li.opens-right > a::after{
-	border-color: transparent transparent transparent white;
-}
 
-img{
-	height: 250px;
-	width: 392px;
+.orbit-image {
+	height: $orbit-image-height;
 }

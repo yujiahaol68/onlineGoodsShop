@@ -1,27 +1,13 @@
-/*** MOBILE NAVIGATION **/
+$desktop-nav-height : 30px;
 
 .title-bar {
-	height: 60px;
+	height: $desktop-nav-height;
 	padding-top: 17px;
 	background: $primary-color;
 }
 
-.off-canvas-wrapper {
-	background-color: rgba(255,255,255,0.5);
-}
-
-.mobile-menu {
-    background: transparent;
-    li {
-        background: transparent;
-    }
-	a {
-        color: rgba(0,0,0,0.7);
-    }
-}
-
-.js-off-canvas-exit {
-	background: rgba(0,0,0,0.5);
+#siteTitle {
+	color: white;
 }
 
 /**** DESKTOP NAVIGATION ****/
@@ -30,12 +16,28 @@
 	font-size: 18px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	height: 60px;
-}
+	height: $desktop-nav-height;
 
-.menu-text {
-	line-height: 60px;
-	padding: 0px;
+	.menu-text {
+		line-height: $desktop-nav-height;
+		padding: 0px;
+	}
+
+	.menu > li > a {
+		line-height: $desktop-nav-height;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		height: $desktop-nav-height;
+	}
+
+	.is-submenu-item a{
+		color: grey;
+		background: $white;
+	}
+
+	.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+		border-color: $white transparent transparent;
+	}
 }
 
 .top-bar-left{
@@ -43,14 +45,14 @@
 }
 
 .top-bar-right{
-	line-height: 60px;
+	line-height: $desktop-nav-height;
 	padding: 0px;
 }
 
 .top-bar {
     ul {
         background-color: $primary-color;
-    	line-height: 60px;
+    	line-height: $desktop-nav-height;
     	padding: 0px;
     }
     a {
@@ -58,17 +60,10 @@
     }
 }
 
-.menu > li > a {
-	line-height: 60px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	height: 60px;
-}
-
-nav a.button.alert{
+nav a.button{
 	background-color: $primary-color;
 	font-size: 1.1rem;
-	line-height: 60px;
+	line-height: $desktop-nav-height;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
