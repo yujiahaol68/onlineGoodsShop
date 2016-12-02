@@ -1,3 +1,5 @@
+$category-color : #6c6669;
+
 .hero{
 	padding-top: 20px;
 }
@@ -8,7 +10,7 @@
 }
 
 #f-cate{
-	background-color: #999;
+	background-color: $category-color;
 }
 
 #category a#f-cate{
@@ -17,7 +19,7 @@
 
 .is-submenu-item a{
 	color: white;
-	background: #999;
+	background: $category-color;
 }
 
 .dropdown.menu.vertical > li.opens-right > a::after{
