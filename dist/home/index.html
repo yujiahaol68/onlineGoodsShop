@@ -43,19 +43,19 @@
         <section class="hero">
             <div class="row">
                 <!--- Logo picture --->
-                <div class="medium-2 large-2 columns"><img id="logo" src="../assets/img/logo.png"></div>
+                <div class="medium-2 large-2 columns" id="logoImg"><img id="logo" src="../assets/img/logo.png"></div>
                 <!--- search bar sticky --->
                 <div class="medium-6 large-6 columns" data-sticky-container>
                     <div class="sticky" data-sticky data-top-anchor="logo:top" data-margin-top="0">
-                    <form class="searchGoodsName" action="#" method="post">
-                        <div class="input-group">
-                            <input class="input-group-field" type="text">
-                            <div class="input-group-button">
-                                <input type="submit" class="button" value="Search">
+                        <form class="searchGoodsName" action="#" method="post">
+                            <div class="input-group">
+                                <input class="input-group-field" type="text">
+                                <div class="input-group-button">
+                                    <input type="submit" class="button" value="Search">
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -98,6 +98,8 @@
                 <div class="medium-6 large-7 columns align-bottom pics">
                     <div class="orbit" role="region" aria-label="Favorite Space" data-orbit>
                         <ul class="orbit-container">
+                            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
                             <li class="is-active orbit-slide">
                                 <img class="orbit-image" src="../assets/img/01.png">
                                 <figcaption class="orbit-caption">ipad air2</figcaption>
@@ -178,5 +180,6 @@
 
 
     <script src="../assets/js/app.js"></script>
+    <script src="../assets/etn_js/masonry.pkgd.min.js"></script>
   </body>
 </html>
