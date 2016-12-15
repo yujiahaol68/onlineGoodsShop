@@ -51,9 +51,6 @@ function pages() {
     .pipe(panini({
       root: 'src/pages/',
       layouts: 'src/layouts/',
-      pageLayouts: {
-          'home' : 'default'
-      },
       partials: 'src/partials/',
       data: 'src/data/',
       helpers: 'src/helpers/'
@@ -101,7 +98,7 @@ function javascript() {
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
     .pipe($.babel())
-    .pipe($.concat('app.js'))
+    .pipe($.concat('app.js'))   //concat ALL js files into single app.js file
     .pipe($.if(PRODUCTION, $.uglify()
       .on('error', e => { console.log(e); })
     ))

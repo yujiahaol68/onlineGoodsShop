@@ -57,23 +57,6 @@
 @import './partials/nav';
 @import './partials/footer';
 @import './partials/hero';
-
-
-.main{
-	padding: 130px 0px;
-}
-
-
-/* *************
-MEDIA QUERY
-**************** */
-
-@media (max-width: 820px) {
-
-	.nav-desktop {
-		display: none;
-	}
-    .hero {
-        padding: 0px;
-    }
-}
+@import './partials/material-scrolltop';    //back-to-top button with material design pattern
+@import './partials/postCard';    //goodsitem show with Card css Pattern
+@import './partials/main';
