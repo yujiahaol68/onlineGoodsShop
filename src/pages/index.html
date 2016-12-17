@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
+
 <!-- HERO SECTION -->
 <section class="hero">
     <div class="row">
         <!--- Logo picture --->
-        <div class="medium-2 large-2 columns" id="logoImg"><img id="logo" src="../assets/img/logo.png"></div>
+        <div class="medium-2 large-2 columns" id="logoImg"><img id="logo" src="{{root}}assets/img/logo.png"></div>
         <!--- search bar sticky --->
         <div class="medium-6 large-6 columns" data-sticky-container>
             <div class="sticky" data-sticky data-top-anchor="logo:top" data-margin-top="0">
@@ -21,92 +22,43 @@ layout: default
         </div>
     </div>
     <div class="row">
+
         <!--- Goods Category --->
-        <div class="medium-2 columns show-for-medium" id="category">
-            <ul class="vertical dropdown menu" data-dropdown-menu style="max-width: 300px;">
-                <li><a href="#" id="f-cate">electronics</a>
-                    <ul class="menu">
-                        <li><a href="#">hardware</a></li>
-                        <li><a href="#">software</a></li>
-                        <li><a href="#">computer</a></li>
-                        <li><a href="#">recreation device</a></li>
-                        <li><a href="#">mobile device</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" id="f-cate">clothing,shoes</a>
-                    <ul class="menu">
-                        <li><a href="#">man</a></li>
-                        <li><a href="#">woman</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" id="f-cate">books</a>
-                    <ul class="menu">
-                        <li><a href="#">novel</a></li>
-                        <li><a href="#">biography</a></li>
-                        <li><a href="#">others</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" id="f-cate">vehicle</a>
-                    <ul class="menu">
-                        <li><a href="#">eletronic</a></li>
-                        <li><a href="#">bicycle</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" id="f-cate">Sport</a></li>
-                <li><a href="#" id="f-cate">Grocery &amp; wine</a></li>
-            </ul>
-        </div>
+        {{> index_goodsCategory}}
+
         <!--- pics orbit-image-shower --->
         <div class="medium-6 large-7 columns align-bottom pics">
-            <div class="orbit" role="region" aria-label="Favorite Space" data-orbit>
-                <ul class="orbit-container">
-                    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-                    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-                    <li class="is-active orbit-slide">
-                        <img class="orbit-image" src="../assets/img/01.png">
-                        <figcaption class="orbit-caption">ipad air2</figcaption>
-                    </li>
-                    <li class="orbit-slide">
-                        <img class="orbit-image" src="../assets/img/02.jpg">
-                        <figcaption class="orbit-caption">iphone7</figcaption>
-                    </li>
-                    <li class="orbit-slide">
-                        <img class="orbit-image" src="../assets/img/03.jpg">
-                        <figcaption class="orbit-caption">surface studio</figcaption>
-                    </li>
-                    <li class="orbit-slide">
-                        <img class="orbit-image" src="../assets/img/01.png">
-                        <figcaption class="orbit-caption">ipad air2</figcaption>
-                    </li>
-                </ul>
-                <nav class="orbit-bullets">
-                    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details</span><span class="show-for-sr">Current Slide</span></button>
-                    <button data-slide="1"><span class="show-for-sr">Second slide details</span></button>
-                    <button data-slide="2"><span class="show-for-sr">Third slide details</span></button>
-                    <button data-slide="3"><span class="show-for-sr">Fourth slide details</span></button>
-                </nav>
-            </div>
+            {{> index_orbitImageViewer}}
         </div>
+
         <!--- List panel: Hot and announcement --->
         <div class="medium-4 large-3 columns show-for-medium">
-            <ul class="tabs" data-tabs id="example-tabs">
-                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">hot list</a></li>
-                <li class="tabs-title"><a href="#panel2">announcement</a></li>
-            </ul>
-            <div class="tabs-content" data-tabs-content="example-tabs">
-                <div class="tabs-panel is-active" id="panel1">
-                    <li><a href="#">Goods1</a></li>
-                    <li><a href="#">Goods2</a></li>
-                    <li><a href="#">Goods3</a></li>
-                    <li><a href="#">Goods4</a></li>
-                </div>
-                <div class="tabs-panel" id="panel2">
-                    <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit</p>
+            {{> index_listPanel}}
+        </div>
+
+    </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+    <!-- MD Card Layout -->
+    <div class="row">
+        <div class="medium-12 large-12 columns">
+            <div class="tabs-panel is-active" id="new-all" aria-hidden="false">
+                <div class="row list-group animated fadeInUp">
+
+                    <!-- MD Card -->
+                    <div class="item large-3 medium-3 small-6 columns group-item-grid-default">
+                        {{> card_vertical_1}}
+                    </div>
+
+                    <div class="item large-3 medium-3 small-6 columns group-item-grid-default">
+                        {{> card_vertical_2}}
+                    </div>
+
+
                 </div>
             </div>
         </div>
     </div>
-</section>
-<!-- MAIN CONTENT -->
-<div class="main">
 </div>

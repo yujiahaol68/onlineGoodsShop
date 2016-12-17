@@ -52,12 +52,13 @@
 /*************************************/
 /************* MY STYLES ************/
 /*************************************/
-@import './partials/variables';
-@import './partials/base';
-@import './partials/nav';
-@import './partials/footer';
-@import './partials/hero';
+@import './partials/variables';    //sass variables define in
+@import './partials/base';    //wrapper,base page css
+@import './partials/nav';    //nav bar SECTION
+@import './partials/footer';    //footer SECTION
+@import './partials/hero';    //hero SECTION
 @import './partials/material-scrolltop';    //back-to-top button with material design pattern
 @import './partials/postCard';    //goodsitem show with Card css Pattern
-@import './partials/main';
+@import './partials/main';    //main SECTION
 @import './partials/animate.min';    //costomlize Animate.css using gulp and get customed animate.min.css
+@import './partials/materialEffect';    //css effect that obey Material Design rules

@@ -1,5 +1,92 @@
 // base css pattern of main section
 
 .main {
-	padding: 130px 0px;
+	padding: 50px 0px 130px 0px;
+	background-color: rgb(237, 237, 237);
+}
+
+.item {
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+.content .list-group .item {
+	margin-top: 30px;
+}
+
+.content .tabs-content .tabs-panel {
+	padding: 0px;
+}
+
+.tabs-panel.is-active {
+	display: block;
+}
+
+.content .post .post-des {
+	padding: 15px 0 15px 10px;
+}
+
+.content .post .post-des .post-stats {
+	margin-right: 15px;
+}
+
+.thumb-border {
+	border: 2px solid #ececec;
+}
+
+.content .post .post-thumb {
+	position: relative;
+	height: 190px;
+	overflow: hidden;
+}
+
+.content .post .post-thumb img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.content .post .post-thumb .video-stats {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	left: 0;
+	padding: 0 10px;
+}
+
+.post-thumb {
+	img {
+		border-radius: 2px 2px 0px 0px;
+	}
+}
+
+.post-des {
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 7px;
+	background-color: white;
+	border-radius: 0px 0px 2px 2px;
+	word-wrap: break-word; 		//force long words keep in card div
+	word-break: break-all;
+}
+
+.goods-title {
+	color: rgba(0,0,0,0.8);
+}
+
+.post-des a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+.price {
+	color: red;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+	float: right;
 }
