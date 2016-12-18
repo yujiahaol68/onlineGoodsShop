@@ -35,6 +35,7 @@ PATHS:
 
     # Third party Libraries that acquire jquery
     - "src/assets/js/material-scrolltop.js"
+    - "src/assets/js/jquery.unveil.js"
 
     # Core Foundation files
     - "bower_components/foundation-sites/js/foundation.core.js"
