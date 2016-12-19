@@ -1,8 +1,8 @@
 // post Card pattern define
 
 .item {
-	padding-right: 3px;
-	padding-left: 3px;
+	padding-right: 8px;
+	padding-left: 8px;
 }
 
 .content .list-group .item {
@@ -29,10 +29,6 @@
 	border: 2px solid #ececec;
 }
 
-.post:hover {
-	border: 1px solid #e83a37;
-}
-
 .content .post .post-thumb {
 	position: relative;
 	height: 190px;
@@ -53,10 +49,20 @@
 	padding: 0 10px;
 }
 
+.post-thumb {
+	img {
+		border-radius: 2px 2px 0px 0px;
+	}
+}
+
 .post-des {
 	padding-right: 5px;
 	padding-left: 5px;
 	padding-top: 7px;
+	background-color: white;
+	border-radius: 0px 0px 2px 2px;
+	word-wrap: break-word; 		//force long words keep in card div
+	word-break: break-all;
 }
 
 .goods-title {
