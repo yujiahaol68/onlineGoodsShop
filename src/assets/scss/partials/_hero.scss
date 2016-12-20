@@ -1,6 +1,10 @@
 $category-color : #6c6669;
 $orbit-image-height : 250px;
 
+/**********************
+BASE HERO SECTION STYLE
+***********************/
+
 .hero{
 	padding-top: 20px;
 
@@ -14,10 +18,9 @@ $orbit-image-height : 250px;
 	}
 }
 
-.pics{
-    padding-left: 0px;
-    padding-right: 0px;
-}
+/*************
+CATEGORY STYLE
+**************/
 
 #f-cate{
 	background-color: $category-color;
@@ -27,8 +30,28 @@ $orbit-image-height : 250px;
 	color: white;
 }
 
+/*************
+PICTURE SLIDER
+**************/
 
+.pics{
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 .orbit-image {
 	height: $orbit-image-height;
+}
+
+/*************************************
+LIST panel and TEXT-SLIDER panel STYLE
+**************************************/
+
+#panel2 {
+    max-height: 176px;
+}
+
+.Announcement {
+    max-height: 170px;
+    text-align: center;
 }

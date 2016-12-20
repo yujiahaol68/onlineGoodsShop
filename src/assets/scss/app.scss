@@ -32,7 +32,7 @@
 @include foundation-progress-bar;
 // @include foundation-progress-element;
 // @include foundation-meter-element;
-@include foundation-slider;
+//@include foundation-slider;
 @include foundation-sticky;
 @include foundation-reveal;
 @include foundation-switch;
@@ -62,3 +62,4 @@
 @import './partials/main';    //main SECTION included pagination
 @import './partials/animate.min';    //costomlize Animate.css using gulp and get customed animate.min.css
 @import './partials/materialEffect';    //css effect that obey Material Design rules and some custom effect
+@import './partials/unslider';    //announcement slider using third party jquery plugin
