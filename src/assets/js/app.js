@@ -10,3 +10,7 @@ $('img').unveil();
 $('body').materialScrollTop({
 	duration: 600
 });
+$('.close-button').click(function(){
+	$('.signError').hide();
+	$('#signInForm').foundation('resetForm');
+});
