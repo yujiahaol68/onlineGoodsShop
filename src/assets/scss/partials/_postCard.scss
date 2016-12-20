@@ -35,6 +35,11 @@
 	overflow: hidden;
 }
 
+.post-thumb {
+    overflow: hidden;
+	//avoid img out of father div
+}
+
 .content .post .post-thumb img{
 	width: 100%;
 	height: 100%;
