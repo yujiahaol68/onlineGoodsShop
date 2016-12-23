@@ -1,4 +1,8 @@
-$desktop-nav-height : 30px;
+//These variables define font size of NAV
+$desktop-nav-height : 35px;
+$desktop-nav-a-hover-underline-color : #febd69;
+$desktop-nav-a-and-title-font-size : 18px;
+$desktop-nav-a-hasButtonClass-font-size : 1.1rem;
 
 .title-bar {
 	height: $desktop-nav-height;
@@ -11,12 +15,12 @@ $desktop-nav-height : 30px;
 }
 
 /**** DESKTOP NAVIGATION ****/
-.nav-desktop{
+.nav-desktop {
 	background-color: $primary-color;
-	font-size: 18px;
+	font-size: $desktop-nav-a-and-title-font-size;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	height: $desktop-nav-height;
+	height: $desktop-nav-height !important;
 
 	.menu-text {
 		line-height: $desktop-nav-height;
@@ -30,7 +34,7 @@ $desktop-nav-height : 30px;
 		height: $desktop-nav-height;
 	}
 
-	.is-submenu-item a{
+	.is-submenu-item a {
 		color: grey;
 		background: $white;
 	}
@@ -38,13 +42,18 @@ $desktop-nav-height : 30px;
 	.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
 		border-color: $white transparent transparent;
 	}
+
+	.nav-a:hover {
+		border-bottom: 2px solid $desktop-nav-a-hover-underline-color;
+		font-weight: bold;
+	}
 }
 
-.top-bar-left{
+.top-bar-left {
 	display: inline-block;
 }
 
-.top-bar-right{
+.top-bar-right {
 	line-height: $desktop-nav-height;
 	padding: 0px;
 }
@@ -60,9 +69,9 @@ $desktop-nav-height : 30px;
     }
 }
 
-nav a.button{
+nav a.button {
 	background-color: $primary-color;
-	font-size: 1.1rem;
+	font-size: $desktop-nav-a-hasButtonClass-font-size;
 	line-height: $desktop-nav-height;
 	padding-top: 0px;
 	padding-bottom: 0px;

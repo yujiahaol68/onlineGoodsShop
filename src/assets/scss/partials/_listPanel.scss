@@ -1,0 +1,11 @@
+$tab-hover-underline-color : #f90;
+
+.tabs {
+    .is-active {
+        border-bottom: 2px solid $tab-hover-underline-color;
+    }
+}
+
+#panel1-label {
+    border-right: 1px solid $light-gray;
+}
