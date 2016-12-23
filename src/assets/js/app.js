@@ -14,3 +14,9 @@ $('.close-button').click(function(){
 	$('.signError').hide();
 	$('#signInForm').foundation('resetForm');
 });
+$('.createAccountBtn').hover(function() {
+			$(this).removeClass("hollow");
+		}, function() {
+			$(this).addClass("hollow");
+	}
+);
