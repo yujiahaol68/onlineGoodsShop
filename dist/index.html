@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyGoodsMarket</title>
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/index.css">
   </head>
   <body>
         <!-- DESKTOP NAVIGATION  -->
@@ -674,75 +674,6 @@
                 </div>
             </div>
         
-            <!-- POP UP Layer -->
-            <div class="tiny reveal" id="signIn" data-reveal data-close-on-click="true" data-animation-in="scale-in-up" data-animation-out="fade-out">
-                <h5>Welcome to MyGoodsMarket</h5>
-                <hr>
-                <form action="index.html" method="post" id="signInForm" data-abide novalidate>
-                    <!-- ERROR SHOW -->
-                    <div data-abide-error class="alert callout signError" style="display: none;">
-                        <p><i class="fi-alert"></i> Username or password doesn't exist!</p>
-                    </div>
-            
-            
-                    <div class="row">
-                        <div class="columns">
-                            <label>username
-                                <input type="text" name="username" placeholder="Your username" required>
-                                <span class="form-error">This field is required.</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="columns">
-                            <label>password
-                            <input type="password" name="password" placeholder="Your password" required>
-                            <span class="form-error">This field is required.</span>
-                            </label>
-                        </div>
-                    </div>
-            
-                    <div class="row align-justify">
-                        <fieldset class="columns">
-                            <input id="Remember" type="checkbox"><label for="Remember">Remember Me</label>
-                        </fieldset>
-                        <div class="columns">
-                            <a href="#" class="pull-right">Forget Password?</a>
-                        </div>
-                    </div>
-            
-                    <div class="row align-center">
-                        <input class="button expanded" type="submit" value="Sign in" />
-                    </div>
-                </form>
-            
-                <!-- DIVIDER -->
-                <div class="row divider">
-                    <table>
-                        <tr>
-                            <td>
-                                <hr />
-                            </td>
-                            <td class="td-center"><h5>New to MyGoodsMarket?</h5></td>
-                            <td>
-                                <hr />
-                            </td>
-                        </tr>
-                    </table>​
-                </div>
-            
-                <!-- Creat Account -->
-                <div class="row align-center" style="margin-top: -20px;">
-                    <a href="#" class="button hollow secondary expanded createAccountBtn">Create your GoodsMarket account</a>
-                </div>
-            
-            
-                <button class="close-button" data-close aria-label="Close reveal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            
-        
         </div>
         
 
@@ -776,6 +707,75 @@
     <!-- BACK-TO-TOP BUTTON -->
     <button class="material-scrolltop" type="button"></button>
 
-    <script src="assets/js/app.js"></script>
+    <!-- POP UP Layer -->
+    <div class="tiny reveal" id="signIn" data-reveal data-close-on-click="true" data-animation-in="scale-in-up" data-animation-out="fade-out">
+        <h5>Welcome to MyGoodsMarket</h5>
+        <hr>
+        <form action="index.html" method="post" id="signInForm" data-abide novalidate>
+            <!-- ERROR SHOW -->
+            <div data-abide-error class="alert callout signError" style="display: none;">
+                <p><i class="fi-alert"></i> Username or password doesn't exist!</p>
+            </div>
+    
+    
+            <div class="row">
+                <div class="columns">
+                    <label>username
+                        <input type="text" name="username" placeholder="Your username" required>
+                        <span class="form-error">This field is required.</span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="columns">
+                    <label>password
+                    <input type="password" name="password" placeholder="Your password" required>
+                    <span class="form-error">This field is required.</span>
+                    </label>
+                </div>
+            </div>
+    
+            <div class="row align-justify">
+                <fieldset class="columns">
+                    <input id="Remember" type="checkbox"><label for="Remember">Remember Me</label>
+                </fieldset>
+                <div class="columns">
+                    <a href="#" class="pull-right">Forget Password?</a>
+                </div>
+            </div>
+    
+            <div class="row align-center">
+                <input class="button expanded" type="submit" value="Sign in" />
+            </div>
+        </form>
+    
+        <!-- DIVIDER -->
+        <div class="row divider">
+            <table>
+                <tr>
+                    <td>
+                        <hr />
+                    </td>
+                    <td class="td-center"><h5>New to MyGoodsMarket?</h5></td>
+                    <td>
+                        <hr />
+                    </td>
+                </tr>
+            </table>​
+        </div>
+    
+        <!-- Creat Account -->
+        <div class="row align-center" style="margin-top: -20px;">
+            <a href="#" class="button hollow secondary expanded createAccountBtn">Create your GoodsMarket account</a>
+        </div>
+    
+    
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    
+
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

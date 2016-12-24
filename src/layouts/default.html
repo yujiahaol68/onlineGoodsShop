@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyGoodsMarket</title>
-    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="{{root}}assets/css/index.css">
   </head>
   <body>
         <!-- DESKTOP NAVIGATION  -->
@@ -22,6 +22,9 @@
     <!-- BACK-TO-TOP BUTTON -->
     <button class="material-scrolltop" type="button"></button>
 
-    <script src="{{root}}assets/js/app.js"></script>
+    <!-- POP UP Layer -->
+    {{> signInPOPModal}}
+
+    <script src="{{root}}assets/js/{{page}}.js"></script>
   </body>
 </html>

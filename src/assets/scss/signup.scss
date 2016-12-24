@@ -52,16 +52,3 @@
 /*************************************/
 /************* MY STYLES ************/
 /*************************************/
-@import './partials/variables';    //sass variables define in
-@import './partials/base';    //wrapper,base page css
-@import './partials/nav';    //nav bar SECTION
-@import './partials/footer';    //footer SECTION
-@import './partials/hero';    //hero SECTION
-@import './partials/material-scrolltop';    //back-to-top button with material design pattern
-@import './partials/postCard';    //goodsitem show with Card css Pattern
-@import './partials/main';    //main SECTION included pagination
-@import './partials/animate.min';    //costomlize Animate.css using gulp and get customed animate.min.css
-@import './partials/materialEffect';    //css effect that obey Material Design rules and some custom effect
-@import './partials/unslider';    //announcement slider using third party jquery plugin
-@import './partials/hr-divider';    //divider for hr TAG,the text will display on center
-@import './partials/listPanel';    //list panel custom style

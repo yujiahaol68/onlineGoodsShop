@@ -9,6 +9,7 @@ import rimraf   from 'rimraf';
 import sherpa   from 'style-sherpa';
 import yaml     from 'js-yaml';
 import fs       from 'fs';
+import merge    from 'merge-stream';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -92,18 +93,32 @@ function sass() {
     .pipe(browser.reload({ stream: true }));
 }
 
-// Combine JavaScript into one file
+// Combine JavaScript into each page one file
 // In production, the file is minified
 function javascript() {
-  return gulp.src(PATHS.javascript)
+    //index.js
+  let index = gulp.src(PATHS.index)
     .pipe($.sourcemaps.init())
     .pipe($.babel())
-    .pipe($.concat('app.js'))   //concat ALL js files into single app.js file
+    .pipe($.concat('index.js'))   //concat ALL js files into single index.js file
     .pipe($.if(PRODUCTION, $.uglify()
       .on('error', e => { console.log(e); })
     ))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+
+    //signup.js
+  let signup = gulp.src(PATHS.signup)
+    .pipe($.sourcemaps.init())
+    .pipe($.babel())
+    .pipe($.concat('signup.js'))   //concat ALL js files into single signup.js file
+    .pipe($.if(PRODUCTION, $.uglify()
+      .on('error', e => { console.log(e); })
+    ))
+    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+
+    return merge(index, signup);
 }
 
 // Copy images to the "dist" folder
