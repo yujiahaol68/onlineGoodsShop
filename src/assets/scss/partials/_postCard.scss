@@ -46,7 +46,7 @@
 	object-fit: cover;
 }
 
-.content .post .post-thumb .video-stats {
+.content .post .post-thumb {
 	position: absolute;
 	bottom: 10px;
 	width: 100%;
@@ -55,8 +55,11 @@
 }
 
 .post-thumb {
+	text-align: center;
+
 	img {
 		border-radius: 2px 2px 0px 0px;
+		vertical-align: middle;
 	}
 }
 
