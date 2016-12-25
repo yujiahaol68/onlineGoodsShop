@@ -16,7 +16,9 @@ $('.close-button').click(function(){
 });
 $('.createAccountBtn').hover(function() {
 			$(this).removeClass("hollow");
+			$(this).addClass("alert");
 		}, function() {
 			$(this).addClass("hollow");
+			$(this).removeClass("alert");
 	}
 );
