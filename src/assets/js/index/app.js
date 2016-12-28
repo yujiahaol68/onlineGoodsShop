@@ -12,7 +12,9 @@ $('body').materialScrollTop({
 });
 $('.close-button').click(function(){
 	$('.signError').hide();
+	$('.emailError').hide();
 	$('#signInForm').foundation('resetForm');
+	$('#emailCheckForm').foundation('resetForm');
 });
 $('.createAccountBtn').hover(function() {
 			$(this).removeClass("hollow");

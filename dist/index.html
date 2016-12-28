@@ -717,10 +717,12 @@
                 <p><i class="fi-alert"></i> Username or password doesn't exist!</p>
             </div>
     
+            <!-- LOGIN TEXT -->
             <div class="row align-center">
                 <h4 style="color: #757575">LOGIN</h4>
             </div>
     
+            <!-- LOGIN FORM -->
             <div class="row">
                 <div class="columns">
                     <input type="text" name="username" placeholder="Username" required>
@@ -739,7 +741,7 @@
                     <input id="Remember" type="checkbox"><label for="Remember">Remember Me</label>
                 </fieldset>
                 <div class="columns">
-                    <a href="#" class="pull-right">Forget Password?</a>
+                    <a class="pull-right" data-open="Forget">Forget Password?</a>
                 </div>
             </div>
     
@@ -747,6 +749,31 @@
                 <input class="button btn-md-blue expanded" type="submit" value="Sign in" />
             </div>
         </form>
+    
+        <div class="reveal" id="Forget" data-reveal>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
+    
+            <div class="row">
+                <h4>Confirm your email:</h4>
+                <p>We will send an email to you for resetting your password</p>
+            </div>
+    
+            <!-- ERROR SHOW -->
+            <div data-abide-error class="alert callout emailError" style="display: none;">
+                <p><i class="fi-alert"></i> Email account doesn't exist!</p>
+            </div>
+    
+            <form action="index.html" method="post" id="emailCheckForm" data-abide novalidate>
+                    <input type="text" name="email" placeholder="Email Address" pattern="email" required>
+                    <span class="form-error">Incorrect Email Format</span>
+                <div class="row align-center">
+                    <input class="button alert" type="submit" value="Reset Password">
+                </div>
+            </form>
+        </div>
+    
     
         <!-- DIVIDER -->
         <div class="row divider">
