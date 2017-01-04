@@ -76,3 +76,12 @@ nav a.button {
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
+
+.nav-user-menu {
+    ul {
+        a:hover {
+            text-decoration: underline;
+            color: $primary-color;
+        }
+    }
+}

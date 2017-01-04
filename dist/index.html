@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyGoodsMarket</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
         <!-- DESKTOP NAVIGATION  -->
@@ -16,19 +16,20 @@
                     <ul class="menu">
                         <li class="menu-text" id="siteTitle">MyGoodsMarket</li>
                         <li>&nbsp;&nbsp;&nbsp;</li>
-                        <li><a href="#" class="nav-a">Home</a></li>
+                        <li><a href="index.html" class="nav-a">Home</a></li>
                         <li><a href="#" class="nav-a">Sell</a></li>
                         <li><a href="#" class="nav-a">Help</a></li>
                     </ul>
                 </div>
                 <div class="top-bar-right">
-                    <ul class="dropdown menu" data-dropdown-menu>
+                    <ul class="dropdown menu nav-user-menu" data-dropdown-menu>
                         <li>
                             <a href="#">Your account</a>
                             <ul class="menu">
-                                <li><a href="#" style="font-size: smaller">Your account</a></li>
+                                <li><a href="#" style="font-size: smaller">User Center</a></li>
                                 <li><a href="#" style="font-size: smaller">Shopping list</a></li>
                                 <li><a href="#" style="font-size: small">Subscribe &amp; saved items</a></li>
+                                <li><button type="button" class="button alert expanded">LogOut</button></li>
                             </ul>
                         </li>
                         <li><a href="#" class="button" data-toggle="signIn">Sign in/up</a></li>
@@ -141,13 +142,13 @@
                     
                         <!-- Popular list -->
                     
-                        <div class="tabs-panel is-active" id="panel1">
-                            <li><a href="#">Goods1</a></li>
-                            <li><a href="#">Goods2</a></li>
-                            <li><a href="#">Goods3</a></li>
-                            <li><a href="#">Goods4</a></li>
-                            <li><a href="#">Goods5</a></li>
-                            <li><a href="#">Goods6</a></li>
+                        <div class="tabs-panel is-active hot-list" id="panel1">
+                            <li><a href="#" title="Goods1">Goods1</a></li>
+                            <li><a href="#" title="Goods2">Goods2</a></li>
+                            <li><a href="#" title="Goods3">Goods3</a></li>
+                            <li><a href="#" title="Goods4">Goods4</a></li>
+                            <li><a href="#" title="Goods5">Goods5</a></li>
+                            <li><a href="#" title="Goods6">Goods6</a></li>
                         </div>
                     
                         <!-- TEXT-SLIDER of Announcement-->
@@ -804,6 +805,6 @@
     </div>
     
 
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

@@ -25,7 +25,7 @@
 @include foundation-dropdown-menu;
 //@include foundation-flex-video;
 @include foundation-label;
-//@include foundation-media-object;
+@include foundation-media-object;
 //@include foundation-off-canvas;
 @include foundation-orbit;
 @include foundation-pagination;
@@ -52,3 +52,23 @@
 /*************************************/
 /************* MY STYLES ************/
 /*************************************/
+
+/********** PUBLIC STYLE **********/
+@import './partials/public/base';    //wrapper,base page css
+@import './partials/public/nav';    //nav bar SECTION
+@import './partials/public/footer';    //footer SECTION
+@import './partials/public/material-scrolltop';    //back-to-top button with material design pattern
+@import './partials/public/animate.min';    //costomlize Animate.css using gulp and get customed animate.min.css
+
+/************ index.html ************/
+@import './partials/index/variables';    //sass variables define in
+@import './partials/index/hero';    //hero SECTION
+@import './partials/index/postCard';    //goodsitem show with Card css Pattern
+@import './partials/index/main';    //main SECTION included pagination
+@import './partials/index/materialEffect';    //css effect that obey Material Design rules and some custom effect
+@import './partials/index/unslider';    //announcement slider using third party jquery plugin
+@import './partials/index/hr-divider';    //divider for hr TAG,the text will display on center
+@import './partials/index/listPanel';    //list panel custom style
+
+/************* searchresult.html  **************/
+@import './partials/searchresult/goods-card-list';

@@ -9,3 +9,8 @@ $tab-hover-underline-color : #f90;
 #panel1-label {
     border-right: 1px solid $light-gray;
 }
+
+.hot-list {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
